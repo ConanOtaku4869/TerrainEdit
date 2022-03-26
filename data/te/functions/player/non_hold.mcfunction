@@ -1,0 +1,2 @@
+execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{TE_WAND:1b}}] run function te:player/offhand
+execute unless data entity @s SelectedItem.tag.TE_WAND run function te:player/quit

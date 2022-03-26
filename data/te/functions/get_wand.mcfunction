@@ -1,0 +1,6 @@
+execute if data entity @s SelectedItem if data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Damage:0}}] unless data entity @s Inventory[{Slot:-106b}].tag.display unless data entity @s Inventory[{Slot:-106b}].tag.Enchantments unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run loot replace entity @s weapon.offhand loot te:wand
+execute if data entity @s SelectedItem unless data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{TE_WAND:1b}}] run loot give @s loot te:wand
+execute unless data entity @s SelectedItem if data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Damage:0}}] unless data entity @s Inventory[{Slot:-106b}].tag.display unless data entity @s Inventory[{Slot:-106b}].tag.Enchantments unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run item replace entity @s weapon.offhand with air
+execute unless data entity @s SelectedItem run loot replace entity @s weapon.mainhand loot te:wand
+
+playsound entity.arrow.hit_player player @s

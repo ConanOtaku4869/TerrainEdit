@@ -1,0 +1,1 @@
+execute if score @s te.property matches 3 run function te:sys/brush/structure

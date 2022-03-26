@@ -1,0 +1,1 @@
+execute unless block 29999999 101 29999999 structure_void run clone 29999999 101 29999999 29999999 101 29999999 ~ ~ ~

@@ -1,0 +1,4 @@
+advancement revoke @s only te:request_wand
+
+execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Damage:0}}] unless data entity @s Inventory[{Slot:-106b}].tag.display unless data entity @s Inventory[{Slot:-106b}].tag.Enchantments unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run tellraw @s {"color":"aqua","text":"[ CLICK TO GET TE WAND ]","clickEvent":{"action":"run_command","value":"/function te:get_wand"}}
+execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Damage:0}}] unless data entity @s Inventory[{Slot:-106b}].tag.display unless data entity @s Inventory[{Slot:-106b}].tag.Enchantments unless data entity @s Inventory[{Slot:-106b}].tag.CustomModelData run playsound ui.button.click player @s

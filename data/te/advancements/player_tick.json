@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "player_tick": {
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{id:\"minecraft:warped_fungus_on_a_stick\",tag:{TE_WAND:1b}}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "te:adv/player_tick"
+    }
+}

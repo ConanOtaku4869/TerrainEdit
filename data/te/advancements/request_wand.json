@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "wand": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "warped_fungus_on_a_stick"
+                        ]
+                    }
+                ],
+                "player": {
+                    "player": {
+                        "gamemode": "creative"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "te:adv/request_wand"
+    }
+}

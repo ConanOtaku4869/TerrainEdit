@@ -1,0 +1,2 @@
+execute if score @s te.cube_distance matches -1 align xyz positioned ~0.5 ~ ~0.5 run function te:player/cube/tp_selector
+execute if score @s te.cube_distance matches -2 positioned ^ ^ ^0.2 align xyz positioned ~0.5 ~ ~0.5 run function te:player/cube/tp_selector
